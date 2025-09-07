@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 const Hero = () => {
   const [displayText, setDisplayText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
-  const fullText = 'Frontend Developer';
+  const fullText = 'Dev Full Stack Python';
   useEffect(() => {
     if (currentIndex < fullText.length) {
       const timeout = setTimeout(() => {
