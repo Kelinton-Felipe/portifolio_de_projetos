@@ -84,7 +84,8 @@ const Hero = () => {
         }} transition={{
           delay: 1
         }} className="text-lg md:text-xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed">
-            Especializado em criar experiências digitais incríveis usando{' '}
+            Sou apaixonado por criar experiências digitais que unem performance, design e usabilidade — usando{' '}
+            <span className="text-primary font-medium">Python</span>,{' '}
             <span className="text-primary font-medium">React</span>,{' '}
             <span className="text-primary font-medium">TypeScript</span> e{' '}
             <span className="text-primary font-medium">Tailwind CSS</span>.
@@ -104,7 +105,7 @@ const Hero = () => {
               Ver Projetos
             </Button>
             <Button variant="outline" size="lg" onClick={() => scrollToSection('contact')} className="border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-6 text-lg font-medium transition-all duration-normal hover:scale-105">
-              Vamos criar algo incrível juntos?
+              Entre em Contato
             </Button>
           </motion.div>
 
@@ -118,17 +119,17 @@ const Hero = () => {
         }} className="flex justify-center space-x-6 mb-16">
             {[{
             icon: Github,
-            href: '#',
+            href: 'https://github.com/Kelinton-Felipe',
             label: 'GitHub'
           }, {
             icon: Linkedin,
-            href: '#',
+            href: 'https://www.linkedin.com/in/kelinton-felipe-b32bb12b1/',
             label: 'LinkedIn'
           }, {
             icon: Mail,
-            href: '#',
+            href: 'mailto:kelintonfelipe2011@gmail.com',
             label: 'Email'
-          }].map((social, index) => <motion.a key={social.label} href={social.href} className="w-12 h-12 bg-card border border-border rounded-full flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary transition-all duration-normal hover:scale-110 shadow-card" whileHover={{
+          }].map((social, index) => <motion.a key={social.label} href={social.href} target="_blank" rel="noopener noreferrer" aria-label={social.label} className="w-12 h-12 bg-card border border-border rounded-full flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary transition-all duration-normal hover:scale-110 shadow-card" whileHover={{
             y: -2
           }} initial={{
             opacity: 0,

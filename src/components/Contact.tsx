@@ -44,19 +44,19 @@ const Contact = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'contato@seuemail.com',
-      href: 'mailto:contato@seuemail.com'
+      value: 'kelintonfelipe2011@gmail.com',
+      href: 'mailto:kelintonfelipe2011@gmail.com'
     },
     {
       icon: Phone,
       label: 'Telefone',
-      value: '+55 (11) 99999-9999',
-      href: 'tel:+5511999999999'
+      value: '+55 (31) 98391-6608',
+      href: 'tel:+5531983916608'
     },
     {
       icon: MapPin,
       label: 'Localização',
-      value: 'São Paulo, SP',
+      value: 'Belo Horizonte/MG',
       href: '#'
     }
   ];

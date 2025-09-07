@@ -7,22 +7,17 @@ const Footer = () => {
   const socialLinks = [
     {
       icon: Github,
-      href: 'https://github.com',
+      href: 'https://github.com/Kelinton-Felipe',
       label: 'GitHub'
     },
     {
       icon: Linkedin,
-      href: 'https://linkedin.com',
+      href: 'https://www.linkedin.com/in/kelinton-felipe-b32bb12b1/',
       label: 'LinkedIn'
     },
     {
-      icon: Twitter,
-      href: 'https://twitter.com',
-      label: 'Twitter'
-    },
-    {
       icon: Mail,
-      href: 'mailto:contato@seuemail.com',
+      href: 'mailto:kelintonfelipe2011@gmail.com',
       label: 'Email'
     }
   ];
@@ -47,10 +42,10 @@ const Footer = () => {
               onClick={scrollToTop}
               className="text-2xl font-bold bg-text-gradient bg-clip-text text-transparent hover:scale-105 transition-transform duration-normal"
             >
-              Seu Nome
+              Kelinton Felipe
             </button>
             <p className="text-muted-foreground mt-2">
-              Frontend Developer
+              Full Stack Python
             </p>
           </motion.div>
 
@@ -95,6 +90,17 @@ const Footer = () => {
             </p>
           </motion.div>
 
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.5 }}
+            className="text-center text-sm text-muted-foreground"
+          >
+            <p>+55 (31)98391-6608</p>
+            <p>Belo Horizonte, MG</p>
+          </motion.div>
+
           {/* Divider */}
           <motion.div
             initial={{ opacity: 0, scaleX: 0 }}
@@ -113,13 +119,11 @@ const Footer = () => {
             className="text-center text-sm text-muted-foreground"
           >
             <p className="flex items-center justify-center space-x-1">
-              <span>© {currentYear} Feito com</span>
+              <span>© 2025 Kelinton Felipe, Feito com</span>
               <Heart className="w-4 h-4 text-red-500 animate-pulse" />
-              <span>por Seu Nome</span>
+              <span>por Kelinton Felipe</span>
             </p>
-            <p className="mt-1">
-              Desenvolvido com React, TypeScript e Tailwind CSS
-            </p>
+            
           </motion.div>
         </div>
       </div>

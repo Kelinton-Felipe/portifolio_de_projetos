@@ -46,9 +46,6 @@ const About = () => {
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Sobre <span className="bg-text-gradient bg-clip-text text-transparent">Mim</span>
             </h2>
-            <p className="text-lg text-muted-foreground">
-              Conheça um pouco mais sobre minha jornada e paixão pelo desenvolvimento
-            </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
@@ -59,25 +56,21 @@ const About = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h3 className="text-2xl font-semibold mb-6">
-                Desenvolvedor Frontend Apaixonado
+              <h3 class="text-2xl font-semibold mb-6">
+                Sobre Mim
               </h3>
-              <div className="space-y-4 text-muted-foreground">
+              <div class="space-y-4 text-muted-foreground">
                 <p>
-                  Com mais de <span className="text-primary font-medium">3 anos</span> de experiência 
-                  em desenvolvimento frontend, especializei-me em criar interfaces modernas e funcionais 
-                  que proporcionam experiências excepcionais aos usuários.
+                  Sou desenvolvedor Full Stack, apaixonado por transformar ideias em soluções digitais que realmente funcionem. Mais do que escrever código, gosto de entender como a tecnologia funciona por trás das telas e de buscar soluções que façam sentido para quem vai usar.
                 </p>
                 <p>
-                  Minha jornada começou com curiosidade sobre como as coisas funcionam na web. 
-                  Hoje, transformo ideias em realidade digital, sempre focando em 
-                  <span className="text-accent font-medium"> performance</span>, 
-                  <span className="text-accent font-medium"> acessibilidade</span> e 
-                  <span className="text-accent font-medium"> usabilidade</span>.
+                  Já trabalhei em projetos variados, desde pequenos desafios de aprendizado até sistemas mais complexos, sempre buscando entregar código de qualidade, com atenção à performance, acessibilidade e usabilidade. Também tive a oportunidade de liderar e orientar colegas em projetos de tecnologia, ajudando equipes a evoluírem e alcançarem melhores resultados — uma experiência que me ensinou a equilibrar habilidades técnicas com empatia e comunicação clara.
                 </p>
                 <p>
-                  Quando não estou codando, você pode me encontrar aprendendo novas tecnologias, 
-                  contribuindo em projetos open source ou compartilhando conhecimento com a comunidade dev.
+                  Sou alguém que aprende fazendo: testando novas tecnologias, contribuindo para projetos open source ou compartilhando conhecimento com a comunidade dev. Cada linha de código é uma chance de aprender algo novo e evoluir profissionalmente.
+                </p>
+                <p>
+                  Quando não estou programando, gosto de explorar ferramentas de design, estudar novas stacks e resolver problemas de lógica do dia a dia, sempre curioso e buscando entender o “porquê” das coisas.
                 </p>
               </div>
             </motion.div>
@@ -89,7 +82,7 @@ const About = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h4 className="text-xl font-semibold mb-6">Tecnologias & Ferramentas</h4>
+              <h4 className="text-xl font-semibold mb-6">Tecnologias & Ferramentas que uso no dia a dia:</h4>
               <div className="grid grid-cols-3 gap-3">
                 {skills.map((skill, index) => (
                   <motion.div

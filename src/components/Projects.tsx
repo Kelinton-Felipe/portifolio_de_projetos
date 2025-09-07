@@ -6,40 +6,12 @@ import { Card, CardContent } from '@/components/ui/card';
 const Projects = () => {
   const projects = [
     {
-      title: 'E-commerce React',
-      description: 'Plataforma completa de e-commerce com carrinho, checkout e integração de pagamento. Interface moderna e responsiva.',
-      technologies: ['React', 'TypeScript', 'Stripe', 'Firebase'],
-      image: '/api/placeholder/400/300',
-      github: '#',
-      live: '#',
-      gradient: 'from-blue-500 to-purple-600'
-    },
-    {
-      title: 'Dashboard Analytics',
-      description: 'Dashboard interativo para visualização de dados com gráficos em tempo real e relatórios customizáveis.',
-      technologies: ['React', 'D3.js', 'Node.js', 'MongoDB'],
-      image: '/api/placeholder/400/300',
-      github: '#',
-      live: '#',
-      gradient: 'from-green-500 to-teal-600'
-    },
-    {
-      title: 'App Mobile PWA',
-      description: 'Progressive Web App com funcionalidades offline, notificações push e sincronização de dados.',
-      technologies: ['React', 'PWA', 'Service Workers', 'IndexedDB'],
-      image: '/api/placeholder/400/300',
-      github: '#',
-      live: '#',
-      gradient: 'from-purple-500 to-pink-600'
-    },
-    {
-      title: 'API RESTful',
-      description: 'API robusta com autenticação JWT, documentação Swagger e testes automatizados completos.',
-      technologies: ['Node.js', 'Express', 'JWT', 'PostgreSQL'],
-      image: '/api/placeholder/400/300',
-      github: '#',
-      live: '#',
-      gradient: 'from-orange-500 to-red-600'
+      title: 'Botflix',
+      description: 'Aplicativo de recomendação de filmes baseado em preferências do usuário, com interface interativa e respostas inteligentes em tempo real.',
+      technologies: ['HTML5 semântico', 'CSS3', 'JavaScript', 'n8n', 'Deploy com GitHub Pages'],
+      image: '/botflix-robot.jpg',
+      github: 'https://github.com/Kelinton-Felipe/Botflix',
+      gradient: 'from-red-500 to-black-600'
     }
   ];
 
@@ -86,24 +58,10 @@ const Projects = () => {
                           <Github className="w-4 h-4" />
                         </a>
                       </Button>
-                      <Button
-                        size="icon"
-                        variant="secondary"
-                        className="w-8 h-8 bg-background/80 hover:bg-background"
-                        asChild
-                      >
-                        <a href={project.live} target="_blank" rel="noopener noreferrer">
-                          <ExternalLink className="w-4 h-4" />
-                        </a>
-                      </Button>
+                      
                     </div>
                     
-                    {/* Placeholder content for image */}
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="text-white/80 text-6xl font-bold opacity-50">
-                        {project.title.charAt(0)}
-                      </div>
-                    </div>
+                    <img src={project.image} alt={project.title} className="absolute inset-0 w-full h-full object-cover" />
                   </div>
                 </div>
 
@@ -140,16 +98,7 @@ const Projects = () => {
                         Código
                       </a>
                     </Button>
-                    <Button
-                      size="sm"
-                      className="flex-1 bg-primary hover:bg-primary/90 transition-all duration-normal"
-                      asChild
-                    >
-                      <a href={project.live} target="_blank" rel="noopener noreferrer">
-                        <ExternalLink className="w-4 h-4 mr-2" />
-                        Ver Demo
-                      </a>
-                    </Button>
+                    
                   </div>
                 </CardContent>
               </Card>
